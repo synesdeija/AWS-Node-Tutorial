@@ -18,6 +18,7 @@ resource "aws_ecs_task_definition" "backend_task" {
         "name": "example_app_container",
         "image": "848525353621.dkr.ecr.us-east-2.amazonaws.com/my_example_repo:latest",
         "memory": 512,
+        "cpu": 256,
         "essential": true,
         "portMappings": [
             {
